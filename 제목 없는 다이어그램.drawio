@@ -1,38 +1,161 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36 Edg/138.0.0.0" version="27.2.0">
   <diagram name="페이지-1" id="FlDKaCTUypieoGc0RwTf">
-    <mxGraphModel dx="266" dy="613" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2304" dy="874" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CamssPcfSgW4t0sUK3uv-2" value="SsdFacade" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="190" y="180" width="310" height="242" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-2" value="User" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-490" y="225" width="70" height="125" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-3" value="- ssdRead: SsdRead" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="26" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-7" value="Test Shell" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-230" y="80" width="520" height="480" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-8" value="- ssdWrite: SsdWrite" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="52" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-3" value="Test Shell" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="180" y="40" width="110" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-7" value="- ssdErase: SsdErase" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="78" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-10" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="290" y="180" as="sourcePoint" />
+            <mxPoint x="360" y="180" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-4" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="104" width="310" height="8" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-15" value="Runner" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="20" y="40" width="110" height="120" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-5" value="+ getInstance(type): SsdFacade" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="112" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-20" value="Logger" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="20" y="300" width="110" height="130" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-11" value="+ readSsdIndex(CommandProcessor): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="138" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-33" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-180" y="180" as="sourcePoint" />
+            <mxPoint x="177" y="180" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-10" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="164" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-47" value="SSD Adapter" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="360" y="40" width="110" height="390" as="geometry" />
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-9" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="190" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-53" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="67" as="sourcePoint" />
+            <mxPoint x="290" y="67" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
-        <mxCell id="CamssPcfSgW4t0sUK3uv-6" value="+ method(type): type" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="CamssPcfSgW4t0sUK3uv-2">
-          <mxGeometry y="216" width="310" height="26" as="geometry" />
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-54" value="5.1 Return" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="290" y="30" width="72" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-55" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="360" y="317" as="sourcePoint" />
+            <mxPoint x="290" y="317" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-56" value="8.2 Return" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-7">
+          <mxGeometry x="290" y="280" width="72" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-8" value="SSD" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="80" width="380" height="480" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-4" value="SSD" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="260" y="40" width="110" height="380" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-6" value="Buffer" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="135" y="40" width="110" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-5" value="SSD_output.txt" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="30" y="370" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-24" value="" style="endArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-8" target="RC8Gd-RVGOQ126MgHgB2-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="10" y="180" as="sourcePoint" />
+            <mxPoint x="10" y="90" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="10" y="160" />
+              <mxPoint x="70" y="160" />
+              <mxPoint x="120" y="160" />
+              <mxPoint x="120" y="90" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-30" value="ssd_nand" style="html=1;whiteSpace=wrap;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="30" y="310" width="110" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-34" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint y="180" as="sourcePoint" />
+            <mxPoint x="259" y="180" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-38" value="3.1. Buffer is valid" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="10" y="130" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-39" value="3.2. Buffer isn&#39;t valid" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="125" y="150" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-40" value="4.2 update nand" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="140" y="300" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-41" value="5.2 update output" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry x="140" y="360" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-31" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="394.71" as="sourcePoint" />
+            <mxPoint x="140" y="394.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-62" value="" style="endArrow=classic;html=1;rounded=0;entryX=1;entryY=0.4;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="RC8Gd-RVGOQ126MgHgB2-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="260" y="334.71" as="sourcePoint" />
+            <mxPoint x="140" y="334.71" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-11" value="1. command" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="225" width="72" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-14" value="2. System Call" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="330" y="225" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-9" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="242" y="260" as="sourcePoint" />
+            <mxPoint x="450" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-35" value="" style="endArrow=classic;html=1;rounded=0;exitX=0;exitY=0.25;exitDx=0;exitDy=0;" edge="1" parent="1" source="RC8Gd-RVGOQ126MgHgB2-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="420" y="150" as="sourcePoint" />
+            <mxPoint x="239" y="146" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-36" value="4.1 return Buffer Value" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="290" y="110" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-43" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="710" y="335" as="sourcePoint" />
+            <mxPoint x="241" y="335" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-44" value="6. 2. System Call Return" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295" y="305" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-49" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="247" y="474" as="sourcePoint" />
+            <mxPoint x="478" y="474" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-50" value="7. 2 Read the Output File" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="295.5" y="444" width="135" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-57" value="" style="endArrow=classic;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-56" y="343" as="sourcePoint" />
+            <mxPoint x="-400" y="343" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="RC8Gd-RVGOQ126MgHgB2-58" value="5.2 &amp;amp; 8.3 Get Return" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-390" y="305" width="140" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
